@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Flask Intoduction - Login Page</title>
+        <title>Flask Login Page</title>
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
     </head>
@@ -10,8 +10,8 @@
             <h1>Please Mentioned your Credentials Here </h1>
             <br>
             <form action="" method="post">
-                <input type="text" placeholder="Username" name="username" value="{{request.form.username}}">
-                <input type="password" placeholder="Password" name="password" value="{{request.form.password}}">
+                <input type="text" placeholder="Enter your username" name="username" value="{{request.form.username}}">
+                <input type="password" placeholder="Enter your Password" name="password" value="{{request.form.password}}">
                 <input class="btn btn-default" type="submit" value="Login">
             </form>
             {% if error %}
